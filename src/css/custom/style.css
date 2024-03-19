@@ -77,19 +77,19 @@
   text-align: center;
   text-wrap: pretty;
 }
-.container-custom .produk-ml {
+.container-custom .produk-game {
   display: flex;
 }
-.container-custom .produk-ml .section-left {
+.container-custom .produk-game .section-left {
   border: 1px solid;
   width: 33%;
   margin-right: 2%;
   padding: 1%;
 }
-.container-custom .produk-ml .section-right {
+.container-custom .produk-game .section-right {
   width: 65%;
 }
-.container-custom .produk-ml .section-right .step-1 {
+.container-custom .produk-game .section-right .step-1 {
   border: 1px solid;
   padding-left: 2%;
   padding-right: 2%;
@@ -98,23 +98,23 @@
   border-radius: 5px;
   margin-bottom: 2%;
 }
-.container-custom .produk-ml .section-right .step-1 .title {
+.container-custom .produk-game .section-right .step-1 .title {
   font-size: large;
   font-weight: 800;
   border-bottom: 2px solid;
   margin-bottom: 2%;
 }
-.container-custom .produk-ml .section-right .step-1 .form-id {
+.container-custom .produk-game .section-right .step-1 .form-id {
   display: flex;
 }
-.container-custom .produk-ml .section-right .step-1 .form-id .user-id {
+.container-custom .produk-game .section-right .step-1 .form-id .user-id {
   width: 58%;
   margin-right: 2%;
 }
-.container-custom .produk-ml .section-right .step-1 .form-id .server-id {
+.container-custom .produk-game .section-right .step-1 .form-id .server-id {
   width: 40%;
 }
-.container-custom .produk-ml .section-right .step-2 {
+.container-custom .produk-game .section-right .step-2 {
   border: 1px solid;
   padding-left: 2%;
   padding-right: 2%;
@@ -123,33 +123,33 @@
   border-radius: 5px;
   margin-bottom: 2%;
 }
-.container-custom .produk-ml .section-right .step-2 .title {
+.container-custom .produk-game .section-right .step-2 .title {
   font-size: large;
   font-weight: 800;
   border-bottom: 2px solid;
   margin-bottom: 2%;
 }
-.container-custom .produk-ml .section-right .step-2 .section-step-2 {
+.container-custom .produk-game .section-right .step-2 .section-step-2 {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 15px;
 }
-.container-custom .produk-ml .section-right .step-2 .section-step-2 .item {
+.container-custom .produk-game .section-right .step-2 .section-step-2 .item {
   border: 1px solid;
   border-radius: 5px;
   width: 31.8%;
   display: flex;
 }
-.container-custom .produk-ml .section-right .step-2 .section-step-2 .item .left {
+.container-custom .produk-game .section-right .step-2 .section-step-2 .item .left {
   padding: 2%;
   width: 80%;
 }
-.container-custom .produk-ml .section-right .step-2 .section-step-2 .item .right {
+.container-custom .produk-game .section-right .step-2 .section-step-2 .item .right {
   border: 1px solid;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.container-custom .produk-ml .section-right .step-3 {
+.container-custom .produk-game .section-right .step-3 {
   border: 1px solid;
   padding-left: 2%;
   padding-right: 2%;
@@ -158,20 +158,20 @@
   border-radius: 5px;
   margin-bottom: 2%;
 }
-.container-custom .produk-ml .section-right .step-3 .title {
+.container-custom .produk-game .section-right .step-3 .title {
   font-size: large;
   font-weight: 800;
   border-bottom: 2px solid;
   margin-bottom: 2%;
 }
-.container-custom .produk-ml .section-right .step-3 .form-voucher {
+.container-custom .produk-game .section-right .step-3 .form-voucher {
   display: flex;
 }
-.container-custom .produk-ml .section-right .step-3 .form-voucher .voucher {
+.container-custom .produk-game .section-right .step-3 .form-voucher .voucher {
   width: 85%;
   margin-right: 2%;
 }
-.container-custom .produk-ml .section-right .step-3 .alert-voucher {
+.container-custom .produk-game .section-right .step-3 .alert-voucher {
   margin-left: 1%;
   margin-top: 1%;
   font-size: 13px;
