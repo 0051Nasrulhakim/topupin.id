@@ -1,0 +1,88 @@
+.no-decoration {
+  color: black;
+  text-decoration: none;
+}
+
+.href {
+  text-decoration: none;
+}
+
+.container-wrapper {
+  padding-left: 1%;
+  padding-right: 1%;
+  border: 1px solid;
+}
+
+.carousell-custom {
+  margin-top: 1.4%;
+  border: 1px solid;
+  width: 100%;
+  height: 300px;
+}
+
+.container-custom {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.container-custom .navbar-custom {
+  border: 1px solid;
+}
+.container-custom .navbar-custom .logo {
+  padding: 1%;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+.container-custom .menu {
+  display: flex;
+  border-bottom: 1px solid;
+  margin-top: 1%;
+  margin-bottom: 1.5%;
+}
+.container-custom .menu .list-menu {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-right: 0.2%;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.container-custom .menu .active {
+  border-bottom: 2px solid red;
+}
+.container-custom .item-produk {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.container-custom .item-produk .list-item-produk {
+  border-radius: 7px;
+  width: 13.1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  border: 1px solid;
+}
+.container-custom .item-produk .list-item-produk .pict-item-produk {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  align-items: center;
+}
+.container-custom .item-produk .list-item-produk .title-item-produk {
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.footer-custom {
+  border: 1px solid;
+  margin-top: 3%;
+  height: 120px;
+}
+.footer-custom .content {
+  padding-left: 1%;
+  padding-right: 1%;
+}/*# sourceMappingURL=style.css.map */
