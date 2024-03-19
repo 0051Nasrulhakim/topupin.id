@@ -66,7 +66,7 @@ export default function Game() {
             Ini Gambar
           </div>
           <div className="title-item-produk">
-            Metal Slug
+            Metal Slug ....
           </div>
         </div>
 
