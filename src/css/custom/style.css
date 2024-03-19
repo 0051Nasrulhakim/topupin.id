@@ -10,7 +10,6 @@
 .container-wrapper {
   padding-left: 1%;
   padding-right: 1%;
-  border: 1px solid;
 }
 
 .carousell-custom {
@@ -37,7 +36,7 @@
   display: flex;
   border-bottom: 1px solid;
   margin-top: 1%;
-  margin-bottom: 1.5%;
+  margin-bottom: 1.2%;
 }
 .container-custom .menu .list-menu {
   text-align: center;
@@ -55,6 +54,8 @@
 .container-custom .item-produk {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1%;
+  margin-bottom: 1%;
   justify-content: flex-start;
 }
 .container-custom .item-produk .list-item-produk {
@@ -75,6 +76,77 @@
 .container-custom .item-produk .list-item-produk .title-item-produk {
   text-align: center;
   text-wrap: pretty;
+}
+.container-custom .produk-ml {
+  display: flex;
+}
+.container-custom .produk-ml .section-left {
+  border: 1px solid;
+  width: 33%;
+  margin-right: 2%;
+  padding: 1%;
+}
+.container-custom .produk-ml .section-right {
+  width: 65%;
+}
+.container-custom .produk-ml .section-right .step-1 {
+  border: 1px solid;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.container-custom .produk-ml .section-right .step-1 .title {
+  font-size: large;
+  font-weight: 800;
+  border-bottom: 2px solid;
+  margin-bottom: 2%;
+}
+.container-custom .produk-ml .section-right .step-1 .form-id {
+  display: flex;
+}
+.container-custom .produk-ml .section-right .step-1 .form-id .user-id {
+  width: 58%;
+  margin-right: 2%;
+}
+.container-custom .produk-ml .section-right .step-1 .form-id .server-id {
+  width: 40%;
+}
+.container-custom .produk-ml .section-right .step-2 {
+  border: 1px solid;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  border-radius: 5px;
+}
+.container-custom .produk-ml .section-right .step-2 .title {
+  font-size: large;
+  font-weight: 800;
+  border-bottom: 2px solid;
+  margin-bottom: 2%;
+}
+.container-custom .produk-ml .section-right .step-2 .section-step-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 15px;
+}
+.container-custom .produk-ml .section-right .step-2 .section-step-2 .item {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 31.8%;
+  display: flex;
+}
+.container-custom .produk-ml .section-right .step-2 .section-step-2 .item .left {
+  padding: 2%;
+  width: 80%;
+}
+.container-custom .produk-ml .section-right .step-2 .section-step-2 .item .right {
+  border: 1px solid;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .footer-custom {

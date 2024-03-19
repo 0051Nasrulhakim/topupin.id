@@ -1,9 +1,13 @@
+// 'use client'
 import { Inter } from "next/font/google";
 import "../css/globals.css";
 import "../css/custom/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Link from "next/link";
+// import Link from "next/link";
+// import { usePathname } from 'next/navigation'
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import dynamic from 'next/dynamic'
+const Menu = dynamic(() => import('../component/menu'));
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +17,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -27,32 +32,7 @@ export default function RootLayout({ children }) {
             </div>
           </div>
 
-          <div className="carousell-custom">
-            Ini Adalah Gambar Carousell
-          </div>
-
-          <div className="menu">
-            <div className="list-menu active">
-              <Link href="/" className="no-decoration">
-                Dashboard
-              </Link>
-            </div>
-            <div className="list-menu">
-              <Link href="/categori/pulsa" className="no-decoration">
-                Pulsa
-              </Link>
-            </div>
-            <div className="list-menu">
-              <Link href="/categori/paketData" className="no-decoration">
-                Paket Data
-              </Link>
-            </div>
-            <div className="list-menu">
-              <Link href="/categori/game" className="no-decoration">
-                Game
-              </Link>
-            </div>
-          </div>
+          <Menu />
 
           <div className="container-wrapper">
             {children}

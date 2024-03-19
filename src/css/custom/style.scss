@@ -1,19 +1,21 @@
-.no-decoration{
+.no-decoration {
     color: black;
-    text-decoration: none;   
-}
-
-.href{
     text-decoration: none;
 }
+
+.href {
+    text-decoration: none;
+}
+
 .container-wrapper {
     padding-left: 1%;
     padding-right: 1%;
-    border: 1px solid;
+    // border: 1px solid;
 }
+
 .carousell-custom {
     margin-top: 1.4%;
-    border: 1px solid;    
+    border: 1px solid;
     width: 100%;
     height: 300px;
 }
@@ -21,10 +23,11 @@
 .container-custom {
     padding-right: 5%;
     padding-left: 5%;
-    .navbar-custom {    
+
+    .navbar-custom {
         border: 1px solid;
-        
-        .logo{
+
+        .logo {
             padding: 1%;
             font-weight: 700;
             text-decoration: none;
@@ -32,13 +35,13 @@
         }
     }
 
-    .menu{
+    .menu {
         display: flex;
         border-bottom: 1px solid;
         margin-top: 1%;
-        margin-bottom: 1.5%;
-        
-        .list-menu{
+        margin-bottom: 1.2%;
+
+        .list-menu {
             text-align: center;
             padding-top: 5px;
             padding-bottom: 5px;
@@ -46,26 +49,29 @@
             padding-right: 1%;
             margin-right: 0.2%;
             margin-bottom: 2px;
-            font-weight: 700;    
+            font-weight: 700;
         }
 
-        .active{
+        .active {
             border-bottom: 2px solid red;
         }
     }
 
-    .item-produk{
+    .item-produk {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 1%;
+        margin-bottom: 1%;
         justify-content: flex-start;
-        .list-item-produk{
+
+        .list-item-produk {
             border-radius: 7px;
             width: 13.1%;
             margin-bottom: 1%;
             margin-left: 1%;
             border: 1px solid;
 
-            .pict-item-produk{
+            .pict-item-produk {
                 width: 100%;
                 height: 170px;
                 display: flex;
@@ -74,7 +80,7 @@
                 align-items: center;
             }
 
-            .title-item-produk{
+            .title-item-produk {
                 text-align: center;
                 text-wrap: pretty;
                 // white-space: nowrap;
@@ -82,13 +88,96 @@
         }
 
     }
+
+    .produk-ml {
+        // border: 1px solid;
+        display: flex;
+
+        .section-left {
+            border: 1px solid;
+            width: 33%;
+            margin-right: 2%;
+            padding: 1%;
+        }
+
+        .section-right {
+            width: 65%;
+            .step-1 {
+                border: 1px solid;
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-bottom: 3%;
+                padding-top: 3%;
+                border-radius: 5px;
+                margin-bottom: 2%;
+
+                .title {
+                    font-size: large;
+                    font-weight: 800;
+                    border-bottom: 2px solid;
+                    margin-bottom: 2%;
+                }
+
+                .form-id {
+                    display: flex;
+
+                    .user-id {
+                        width: 58%;
+                        margin-right: 2%;
+                    }
+
+                    .server-id {
+                        width: 40%;
+                    }
+                }
+            }
+            .step-2{
+                border: 1px solid;
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-bottom: 3%;
+                padding-top: 3%;
+                border-radius: 5px;
+
+                .title {
+                    font-size: large;
+                    font-weight: 800;
+                    border-bottom: 2px solid;
+                    margin-bottom: 2%;
+                }
+
+                .section-step-2{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 15px 15px;
+
+                    .item{
+                        border: 1px solid;
+                        border-radius: 5px;
+                        width: 31.8%; 
+                        display: flex;
+                        .left{
+                            padding: 2%;
+                            width: 80%;
+                        }
+                        .right{
+                            border: 1px solid;
+                            border-top-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .footer-custom {
     border: 1px solid;
     margin-top: 3%;
     height: 120px;
-    .content{
+
+    .content {
         padding-left: 1%;
         padding-right: 1%;
     }
