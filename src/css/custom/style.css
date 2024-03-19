@@ -121,6 +121,7 @@
   padding-bottom: 3%;
   padding-top: 3%;
   border-radius: 5px;
+  margin-bottom: 2%;
 }
 .container-custom .produk-ml .section-right .step-2 .title {
   font-size: large;
@@ -147,6 +148,33 @@
   border: 1px solid;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.container-custom .produk-ml .section-right .step-3 {
+  border: 1px solid;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.container-custom .produk-ml .section-right .step-3 .title {
+  font-size: large;
+  font-weight: 800;
+  border-bottom: 2px solid;
+  margin-bottom: 2%;
+}
+.container-custom .produk-ml .section-right .step-3 .form-voucher {
+  display: flex;
+}
+.container-custom .produk-ml .section-right .step-3 .form-voucher .voucher {
+  width: 85%;
+  margin-right: 2%;
+}
+.container-custom .produk-ml .section-right .step-3 .alert-voucher {
+  margin-left: 1%;
+  margin-top: 1%;
+  font-size: 13px;
 }
 
 .footer-custom {

@@ -87,7 +87,7 @@ export default function Ml() {
                   Gambar
                 </div>
               </div>
-              
+
               <div className='item'>
                 <div className='left'>
                   <div className='title-item'>
@@ -104,6 +104,23 @@ export default function Ml() {
 
             </div>
 
+          </div>
+
+          <div className='step-3'>
+            <div className='title'>
+              3. Masukkan Voucher Promo
+            </div>
+            <div className='form-voucher'>
+              <div className='voucher'>
+                <input type="text" class="form-control" placeholder="Kode Voucher" />
+              </div>
+              <div className='btn btn-primary'>
+                Terapkan
+              </div>
+            </div>
+            <div className='alert-voucher'>
+              *Jika Tidak Punya Silahkan lewati
+            </div>
           </div>
 
         </div>

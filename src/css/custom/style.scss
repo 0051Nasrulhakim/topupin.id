@@ -102,6 +102,7 @@
 
         .section-right {
             width: 65%;
+
             .step-1 {
                 border: 1px solid;
                 padding-left: 2%;
@@ -131,13 +132,15 @@
                     }
                 }
             }
-            .step-2{
+
+            .step-2 {
                 border: 1px solid;
                 padding-left: 2%;
                 padding-right: 2%;
                 padding-bottom: 3%;
                 padding-top: 3%;
                 border-radius: 5px;
+                margin-bottom: 2%;
 
                 .title {
                     font-size: large;
@@ -146,26 +149,60 @@
                     margin-bottom: 2%;
                 }
 
-                .section-step-2{
+                .section-step-2 {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 15px 15px;
 
-                    .item{
+                    .item {
                         border: 1px solid;
                         border-radius: 5px;
-                        width: 31.8%; 
+                        width: 31.8%;
                         display: flex;
-                        .left{
+
+                        .left {
                             padding: 2%;
                             width: 80%;
                         }
-                        .right{
+
+                        .right {
                             border: 1px solid;
                             border-top-right-radius: 5px;
                             border-bottom-right-radius: 5px;
                         }
                     }
+                }
+            }
+
+            .step-3{
+                border: 1px solid;
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-bottom: 3%;
+                padding-top: 3%;
+                border-radius: 5px;
+                margin-bottom: 2%;
+
+                .title {
+                    font-size: large;
+                    font-weight: 800;
+                    border-bottom: 2px solid;
+                    margin-bottom: 2%;
+                }
+
+                .form-voucher {
+                    display: flex;
+
+                    .voucher{
+                        width: 85%;
+                        margin-right: 2%;
+                    }
+                }
+
+                .alert-voucher{
+                    margin-left: 1%;
+                    margin-top: 1%;
+                    font-size: 13px;
                 }
             }
         }
