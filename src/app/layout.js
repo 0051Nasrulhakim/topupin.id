@@ -3,9 +3,9 @@ import { Inter } from "next/font/google";
 import "../css/globals.css";
 import "../css/custom/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Link from "next/link";
-// import { usePathname } from 'next/navigation'
+
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import dynamic from 'next/dynamic'
 const Menu = dynamic(() => import('../component/menu'));
 

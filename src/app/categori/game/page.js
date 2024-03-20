@@ -106,6 +106,17 @@ export default function Game() {
             </div>
           </Link>
         </div>
+        
+        <div className="list-item-produk">
+          <Link href='./game/...' className='no-decoration'>
+            <div className="pict-item-produk">
+              Ini Gambar
+            </div>
+            <div className="title-item-produk">
+              Metal Slug
+            </div>
+          </Link>
+        </div>
 
       </div>
 

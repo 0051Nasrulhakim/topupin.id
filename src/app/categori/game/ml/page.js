@@ -1,13 +1,18 @@
 import React from 'react'
+import dynamic from 'next/dynamic'
+const PaymenMethodGame = dynamic(() => import('../../../../component/payMethodGame'));
 
 export default function Ml() {
+
 
   return (
     <>
       <div className='produk-game'>
 
         <div className='section-left'>
-          asalskalsk
+          <div className='contain'>
+            amskasma kmsakms kamskamksam ksm aksma mskamsakm mkamks
+          </div>
         </div>
 
         <div className='section-right'>
@@ -35,7 +40,7 @@ export default function Ml() {
               <div className='item'>
                 <div className='left'>
                   <div className='title-item'>
-                    Jumlah Diamond
+                    13.000 DM
                   </div>
                   <div className='price-item'>
                     Rp. 1.000.000
@@ -49,7 +54,7 @@ export default function Ml() {
               <div className='item'>
                 <div className='left'>
                   <div className='title-item'>
-                    Jumlah Diamond
+                    Starlight
                   </div>
                   <div className='price-item'>
                     Rp. 1.000.000
@@ -63,7 +68,7 @@ export default function Ml() {
               <div className='item'>
                 <div className='left'>
                   <div className='title-item'>
-                    Jumlah Diamond
+                    180 DM
                   </div>
                   <div className='price-item'>
                     Rp. 1.000.000
@@ -77,7 +82,7 @@ export default function Ml() {
               <div className='item'>
                 <div className='left'>
                   <div className='title-item'>
-                    Jumlah Diamond
+                    778 DM
                   </div>
                   <div className='price-item'>
                     Rp. 1.000.000
@@ -91,7 +96,7 @@ export default function Ml() {
               <div className='item'>
                 <div className='left'>
                   <div className='title-item'>
-                    Jumlah Diamond
+                    990 DM
                   </div>
                   <div className='price-item'>
                     Rp. 1.000.000
@@ -121,6 +126,34 @@ export default function Ml() {
             <div className='alert-voucher'>
               *Jika Tidak Punya Silahkan lewati
             </div>
+          </div>
+
+          <div className='step-3'>
+
+            <div className='title'>
+              4. Pilih Metode Bayar
+            </div>
+
+            <PaymenMethodGame />
+
+          </div>
+
+          <div className='step-3'>
+
+            <div className='title'>
+              4. Check Out
+            </div>
+
+            <div className='user-id'>
+              <input type="text" class="form-control" placeholder="Masukkan Nomor WhatsApp" />
+            </div>
+
+            <div className='btn-center mt-3'>
+              <button className='btn btn-success'>
+                Buat Pesanan
+              </button>
+            </div>
+
           </div>
 
         </div>
