@@ -1,9 +1,14 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function Menu() {
+
+  useEffect(() => {
+    typeof document !== undefined ? require('bootstrap/dist/js/bootstrap.bundle.min.js') : null
+  }, [])
 
   const path = usePathname();
 
@@ -42,27 +47,27 @@ export default function Menu() {
     // Jika path bukan '/', return div kosong
     return (
       <div className="menu">
-          <div className="list-menu active">
-            <Link href="/" className="no-decoration">
-              Dashboard
-            </Link>
-          </div>
-          <div className="list-menu">
-            <Link href="/categori/pulsa" className="no-decoration">
-              Pulsa
-            </Link>
-          </div>
-          <div className="list-menu">
-            <Link href="/categori/paketData" className="no-decoration">
-              Paket Data
-            </Link>
-          </div>
-          <div className="list-menu">
-            <Link href="/categori/game" className="no-decoration">
-              Game
-            </Link>
-          </div>
+        <div className="list-menu active">
+          <Link href="/" className="no-decoration">
+            Dashboard
+          </Link>
         </div>
+        <div className="list-menu">
+          <Link href="/categori/pulsa" className="no-decoration">
+            Pulsa
+          </Link>
+        </div>
+        <div className="list-menu">
+          <Link href="/categori/paketData" className="no-decoration">
+            Paket Data
+          </Link>
+        </div>
+        <div className="list-menu">
+          <Link href="/categori/game" className="no-decoration">
+            Game
+          </Link>
+        </div>
+      </div>
     );
   }
 }

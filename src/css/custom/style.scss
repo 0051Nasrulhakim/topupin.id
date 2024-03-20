@@ -62,13 +62,16 @@
         flex-wrap: wrap;
         margin-top: 1%;
         margin-bottom: 1%;
-        justify-content: flex-start;
+        justify-content: center;
+        gap: 10.5px 10.5px;
+        border:1px solid;
 
         .list-item-produk {
             border-radius: 7px;
-            width: 13.1%;
+            // width: 13.1%;
+            width: 8.7rem;
             margin-bottom: 1%;
-            margin-left: 1%;
+            // margin-left: 1%;
             border: 1px solid;
 
             .pict-item-produk {
@@ -94,14 +97,60 @@
         display: flex;
 
         .section-left {
-            border: 1px solid;
-            width: 33%;
+            // border: 1px solid;
+            width: 25%;
             margin-right: 2%;
-            padding: 1%;
+            
+            .contain{
+                padding: 1%;
+                border: 1px solid;
+                height: 300px;
+            }
+
+            @media screen and (max-width: 980px) {
+                width:100%;
+                .contain{
+                    margin-bottom: 2%;
+                    border-radius: 5px;
+                    height: 320px;
+                    padding: 1%;
+                    border: 1px solid;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                width:100%;
+                .contain{
+                    margin-bottom: 2%;
+                    border-radius: 5px;
+                    height: 120px;
+                    padding: 1%;
+                    border: 1px solid;
+                }
+            }
+            @media screen and (max-width: 750px) {
+                width:100%;
+                .contain{
+                    margin-bottom: 2%;
+                    border-radius: 5px;
+                    height: 220px;
+                    padding: 1%;
+                    border: 1px solid;
+                }
+            }
+            @media screen and (max-width: 450px) {
+                width:100%;
+                .contain{
+                    margin-bottom: 2%;
+                    border-radius: 5px;
+                    height: 120px;
+                    padding: 1%;
+                    border: 1px solid;
+                }
+            }
         }
 
         .section-right {
-            width: 65%;
+            width: 73%;
 
             .step-1 {
                 border: 1px solid;
@@ -125,6 +174,10 @@
                     .user-id {
                         width: 58%;
                         margin-right: 2%;
+                    }
+
+                    .user-id-ff {
+                        width: 100%;
                     }
 
                     .server-id {
@@ -157,20 +210,56 @@
                     .item {
                         border: 1px solid;
                         border-radius: 5px;
-                        width: 31.8%;
+                        // width: 31.8%;
+                        width: 12rem;
                         display: flex;
+
+                        @media screen and (max-width: 980px) {
+                            text-align: center;
+                            border: 1px solid;
+                            width: 32%;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            text-align: center;
+                            border: 1px solid;
+                            width: 8.6rem;
+                        }
 
                         .left {
                             padding: 2%;
                             width: 80%;
+
+                            @media screen and (max-width: 750px) {
+                                text-align: center;
+                                width: 100%;
+                            }
+
                         }
 
                         .right {
                             border: 1px solid;
                             border-top-right-radius: 5px;
                             border-bottom-right-radius: 5px;
+
+                            @media screen and (max-width: 750px) {
+                                display: none;
+                            }
+
+                            @media screen and (max-width: 980px) {
+                                width: 30%;
+                            }
+
                         }
                     }
+
+                    @media screen and (max-width: 750px) {
+                        display: flex;
+                        width: 100%;
+                        gap: 10px 10px;
+                        justify-content: center;
+                    }
+
                 }
             }
 
@@ -205,8 +294,63 @@
                     font-size: 13px;
                 }
             }
+            @media screen and (max-width: 980px) {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 980px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
         }
     }
+}
+
+.accordion{
+    padding: 1px;
+
+    .accordion-button{
+        background-color: #C7C8CC;
+    }
+
+    .accordion-item{
+        margin-bottom: 1px;
+    }
+
+    .btn-atas{
+        border-top-left-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+    }
+
+    .btn-bawah{
+        border-bottom-left-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+    }
+
+    .accordion-body{
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        margin-bottom: 1%;
+    }
+}
+.accordion-button:not(.collapsed) {
+    background-color: #007bff; // Ganti dengan warna yang diinginkan
+    color: #fff; // Ganti dengan warna teks yang sesuai
+
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+
+}
+
+.accordion-button:focus, .accordion-button:active {
+    box-shadow: none; // Menghilangkan bayangan
+    outline: none; // Menghilangkan outline
+}
+
+.btn-center{
+    display: flex;
+    justify-content: center;
 }
 
 .footer-custom {
