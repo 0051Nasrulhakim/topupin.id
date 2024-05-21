@@ -1,0 +1,168 @@
+.no-decoration {
+  color: black;
+  text-decoration: none;
+}
+
+.container-innner {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.href {
+  text-decoration: none;
+}
+
+.title-page {
+  color: white;
+  text-align: center;
+  border: 1px solid;
+  font-weight: 700;
+  font-size: medium;
+  padding: 0.3%;
+  border-radius: 5px;
+  background-color: rgb(53, 77, 70);
+}
+
+.container-admin {
+  display: flex;
+  flex-direction: column;
+  /* Menjadikan kontainer sebagai flex column */
+  height: 100vh;
+  /* Menggunakan tinggi layar secara penuh */
+}
+.container-admin .navbar-admin {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #22ade9;
+  /* Tambahkan warna latar belakang navbar */
+  z-index: 1000;
+  /* Atur z-index agar navbar muncul di atas konten */
+}
+.container-admin .logo {
+  padding: 1%;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+.container-admin .container-wrapper-admin {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  margin-top: 4%;
+  position: relative;
+}
+.container-admin .container-wrapper-admin .section-left {
+  width: 16%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.6%;
+  padding-bottom: 0.6%;
+  max-height: 100%;
+  overflow-y: auto;
+  height: 91.2vh;
+  border-top-right-radius: 40px;
+  margin-right: 1%;
+  background-color: #104358;
+  color: white;
+}
+.container-admin .container-wrapper-admin .section-left .menu .title-menu {
+  padding: 1%;
+}
+.container-admin .container-wrapper-admin .section-left .menu .title-menu .text {
+  padding: 1%;
+}
+.container-admin .container-wrapper-admin .section-left .menu .title-menu .subMenu {
+  margin-left: 10%;
+}
+.container-admin .container-wrapper-admin .section-left::-webkit-scrollbar {
+  display: none;
+  /* Menyembunyikan scrollbar */
+}
+.container-admin .container-wrapper-admin .section-right {
+  flex-grow: 1;
+  /* Mengisi sisa lebar yang tersedia */
+  width: 82%;
+  margin-right: 1%;
+  padding: 1%;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+  height: 90.2vh;
+  border: 1px solid #B5C0D0;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.container-admin .container-wrapper-admin .section-right::-webkit-scrollbar {
+  display: none;
+  /* Menyembunyikan scrollbar */
+}
+.container-admin .container-wrapper-admin::-webkit-scrollbar {
+  display: none;
+  /* Menyembunyikan scrollbar */
+}
+.container-admin .container-wrapper-admin .list-produk {
+  font-size: 15px;
+}
+.container-admin .admin-produk-publik .left {
+  width: 45%;
+  margin-right: 3%;
+  border: 1px solid #B5C0D0;
+  padding: 1%;
+}
+.container-admin .admin-produk-publik .left .judul {
+  border-radius: 4px;
+  background-color: #22ade9;
+  color: white;
+}
+.container-admin .admin-produk-publik .left .judul .title {
+  padding: 1%;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-admin .admin-produk-publik .right {
+  width: 52%;
+  border: 1px solid #B5C0D0;
+  padding: 1%;
+}
+.container-admin .admin-produk-publik .right .judul {
+  border-radius: 4px;
+  background-color: #43972e;
+  color: white;
+}
+.container-admin .admin-produk-publik .right .judul .title {
+  padding: 1%;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-admin .kategori-produk {
+  display: flex;
+  margin-top: 0.8%;
+  border-bottom: 1px solid;
+  padding-bottom: 0.1%;
+  margin-bottom: 0.8%;
+}
+.container-admin .kategori-produk .title-categori {
+  padding-right: 1.3%;
+  padding-left: 1.3%;
+  margin-right: 0.8%;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
+}
+.container-admin .kategori-produk .active {
+  z-index: 9999999;
+  border-bottom: 2px solid #dc00e4;
+}
+
+.flex-section {
+  display: flex;
+}
+
+.lokasi-tombol-kanan {
+  display: flex;
+  justify-content: flex-end;
+}/*# sourceMappingURL=admin.css.map */
