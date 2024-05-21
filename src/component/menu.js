@@ -8,8 +8,8 @@ export default function Menu() {
 
   useEffect(() => {
     typeof document !== undefined ? require('bootstrap/dist/js/bootstrap.bundle.min.js') : null
+    
   }, [])
-
   const path = usePathname();
 
   if (path === '/' || path.startsWith('/categori/') && path.split('/').length === 3) {
