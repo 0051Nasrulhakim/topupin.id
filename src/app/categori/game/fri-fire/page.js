@@ -28,7 +28,7 @@ export default function FriFire() {
                     <div className='step-2'>
 
                         <div className='title'>
-                            2. Pilih Item Yang Di Iginkan
+                            2. Pilih Item
                         </div>
 
                         <div className='section-step-2'>
