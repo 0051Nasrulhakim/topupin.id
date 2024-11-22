@@ -25,21 +25,6 @@ export default function Menu() {
               Dashboard
             </Link>
           </div>
-          <div className="list-menu">
-            <Link href="/categori/pulsa" className="no-decoration">
-              Pulsa
-            </Link>
-          </div>
-          <div className="list-menu">
-            <Link href="/categori/paketData" className="no-decoration">
-              Paket Data
-            </Link>
-          </div>
-          <div className="list-menu">
-            <Link href="/categori/game" className="no-decoration">
-              Game
-            </Link>
-          </div>
         </div>
       </div>
     )
@@ -52,7 +37,7 @@ export default function Menu() {
             Dashboard
           </Link>
         </div>
-        <div className="list-menu">
+        {/* <div className="list-menu">
           <Link href="/categori/pulsa" className="no-decoration">
             Pulsa
           </Link>
@@ -66,7 +51,7 @@ export default function Menu() {
           <Link href="/categori/game" className="no-decoration">
             Game
           </Link>
-        </div>
+        </div> */}
       </div>
     );
   }

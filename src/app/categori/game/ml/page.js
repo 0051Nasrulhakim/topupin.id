@@ -1,6 +1,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 const PaymenMethodGame = dynamic(() => import('../../../../component/payMethodGame'));
+import Image from 'next/image'
 
 export default function Ml() {
 
@@ -22,10 +23,10 @@ export default function Ml() {
             </div>
             <div className='form-id'>
               <div className='user-id'>
-                <input type="text" class="form-control" placeholder="User ID" />
+                <input type="text" className="form-control" placeholder="User ID" />
               </div>
               <div className='server-id'>
-                <input type="text" class="form-control" placeholder="Server ID" />
+                <input type="text" className="form-control" placeholder="Server ID" />
               </div>
             </div>
           </div>
@@ -37,7 +38,7 @@ export default function Ml() {
             </div>
 
             <div className='section-step-2'>
-              <div className='item'>
+              <div className='item active'>
                 <div className='left'>
                   <div className='title-item'>
                     13.000 DM
@@ -47,7 +48,20 @@ export default function Ml() {
                   </div>
                 </div>
                 <div className='right'>
-                  Gambar
+                  <div className='gambar'>
+                    <Image
+                      src='/logo/diamond.png'
+                      alt='DM'
+                      width={60}
+                      height={58}
+                      style={{
+                        borderBottomRightRadius: '5px',
+                        borderTopRightRadius: '5px',
+                        overflow: 'hidden', // Pastikan elemen anak terpotong sesuai radius
+                      }}
+                    />
+
+                  </div>
                 </div>
               </div>
 
@@ -61,7 +75,17 @@ export default function Ml() {
                   </div>
                 </div>
                 <div className='right'>
-                  Gambar
+                  <Image
+                    src='/logo/diamond.png'
+                    alt='DM'
+                    width={60}
+                    height={58}
+                    style={{
+                      borderBottomRightRadius: '5px',
+                      borderTopRightRadius: '5px',
+                      overflow: 'hidden', // Pastikan elemen anak terpotong sesuai radius
+                    }}
+                  />
                 </div>
               </div>
 
@@ -75,7 +99,17 @@ export default function Ml() {
                   </div>
                 </div>
                 <div className='right'>
-                  Gambar
+                  <Image
+                    src='/logo/diamond.png'
+                    alt='DM'
+                    width={60}
+                    height={58}
+                    style={{
+                      borderBottomRightRadius: '5px',
+                      borderTopRightRadius: '5px',
+                      overflow: 'hidden', // Pastikan elemen anak terpotong sesuai radius
+                    }}
+                  />
                 </div>
               </div>
 
@@ -89,7 +123,17 @@ export default function Ml() {
                   </div>
                 </div>
                 <div className='right'>
-                  Gambar
+                  <Image
+                    src='/logo/diamond.png'
+                    alt='DM'
+                    width={60}
+                    height={58}
+                    style={{
+                      borderBottomRightRadius: '5px',
+                      borderTopRightRadius: '5px',
+                      overflow: 'hidden', // Pastikan elemen anak terpotong sesuai radius
+                    }}
+                  />
                 </div>
               </div>
 
@@ -103,7 +147,17 @@ export default function Ml() {
                   </div>
                 </div>
                 <div className='right'>
-                  Gambar
+                  <Image
+                    src='/logo/diamond.png'
+                    alt='DM'
+                    width={60}
+                    height={58}
+                    style={{
+                      borderBottomRightRadius: '5px',
+                      borderTopRightRadius: '5px',
+                      overflow: 'hidden', // Pastikan elemen anak terpotong sesuai radius
+                    }}
+                  />
                 </div>
               </div>
 
@@ -117,7 +171,7 @@ export default function Ml() {
             </div>
             <div className='form-voucher'>
               <div className='voucher'>
-                <input type="text" class="form-control" placeholder="Kode Voucher" />
+                <input type="text" className="form-control" placeholder="Kode Voucher" />
               </div>
               <div className='btn btn-primary'>
                 Terapkan

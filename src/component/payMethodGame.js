@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 export default function PayMethodGame() {
     return (
         <>
@@ -24,7 +24,65 @@ export default function PayMethodGame() {
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            ini adalah pilihan Virtual Account
+                            <div className='payMethod-va'>
+                                <div className='payMethod-va-item'>
+                                    <div className='gambar'>
+                                        <Image
+                                            src='/logo_bank/bca.jpg'
+                                            alt='bca'
+                                            width={100}
+                                            height={50}
+                                        />
+
+                                    </div>
+                                    <div className='deskripsi'>
+                                        <div className='nama-bank'>
+                                            VIRTUAL AKUN BCA
+                                        </div>
+                                        <div className='harga'>
+                                            Rp. 10.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='payMethod-va-item active'>
+                                    <div className='gambar'>
+                                        <Image
+                                            src='/logo_bank/bri.jpg'
+                                            alt='bri'
+                                            width={100}
+                                            height={50}
+                                        />
+
+                                    </div>
+                                    <div className='deskripsi'>
+                                        <div className='nama-bank'>
+                                            VIRTUAL AKUN BRI
+                                        </div>
+                                        <div className='harga'>
+                                            Rp. 10.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='payMethod-va-item'>
+                                    <div className='gambar'>
+                                        <Image
+                                            src='/logo_bank/permata.jpg'
+                                            alt='permata'
+                                            width={100}
+                                            height={50}
+                                        />
+
+                                    </div>
+                                    <div className='deskripsi'>
+                                        <div className='nama-bank'>
+                                            VIRTUAL AKUN PERMATA BANK
+                                        </div>
+                                        <div className='harga'>
+                                            Rp. 10.000.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

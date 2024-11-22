@@ -78,6 +78,81 @@
   text-align: center;
   text-wrap: pretty;
 }
+.container-custom .item-kategori {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  justify-content: center;
+  gap: 10.5px 10.5px;
+  border: 1px solid;
+}
+.container-custom .item-kategori .list-item-kategori {
+  border-radius: 7px;
+  width: 8.7rem;
+  margin-bottom: 1%;
+  border: 1px solid;
+}
+.container-custom .item-kategori .list-item-kategori .pict-item-kategori {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  align-items: center;
+}
+.container-custom .item-kategori .list-item-kategori .title-item-kategori {
+  text-align: center;
+  text-wrap: pretty;
+}
+.container-custom .payMethod-va .payMethod-va-item {
+  border: 1px solid #bec2c0;
+  display: flex;
+  margin-bottom: 1%;
+}
+.container-custom .payMethod-va .payMethod-va-item .gambar {
+  width: 110px;
+}
+.container-custom .payMethod-va .payMethod-va-item .deskripsi {
+  margin-left: 1%;
+  width: 100%;
+  display: flex;
+}
+.container-custom .payMethod-va .payMethod-va-item .deskripsi .nama-bank {
+  font-weight: 500;
+  width: 82%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .container-custom .payMethod-va .payMethod-va-item .deskripsi .nama-bank {
+    display: none;
+  }
+}
+.container-custom .payMethod-va .payMethod-va-item .deskripsi .harga {
+  width: 27%;
+  font-weight: 900;
+  font-size: 13pt;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-color: #026631;
+}
+@media screen and (max-width: 450px) {
+  .container-custom .payMethod-va .payMethod-va-item .deskripsi .harga {
+    font-size: 9pt;
+    width: 100%;
+  }
+}
+.container-custom .payMethod-va .payMethod-va-item.active {
+  margin-top: 2%;
+  margin-bottom: 4%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 139, 74, 0.993);
+}
+.container-custom .payMethod-va .payMethod-va-item.active .harga {
+  background-color: #032782;
+}
 .container-custom .produk-game {
   display: flex;
 }
@@ -194,6 +269,13 @@
   border-radius: 5px;
   width: 12rem;
   display: flex;
+  height: 60px;
+}
+.container-custom .produk-game .section-right .step-2 .section-step-2 .item.active {
+  background-color: #032782;
+  color: white;
+  border: none;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 139, 74, 0.993);
 }
 @media screen and (max-width: 980px) {
   .container-custom .produk-game .section-right .step-2 .section-step-2 .item {
@@ -212,6 +294,13 @@
 .container-custom .produk-game .section-right .step-2 .section-step-2 .item .left {
   padding: 2%;
   width: 80%;
+  font-weight: 400;
+}
+.container-custom .produk-game .section-right .step-2 .section-step-2 .item .left .price-item {
+  font-size: 9pt;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 7%;
 }
 @media screen and (max-width: 750px) {
   .container-custom .produk-game .section-right .step-2 .section-step-2 .item .left {
@@ -220,7 +309,6 @@
   }
 }
 .container-custom .produk-game .section-right .step-2 .section-step-2 .item .right {
-  border: 1px solid;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -313,7 +401,8 @@
   border-bottom-right-radius: 0px !important;
 }
 
-.accordion-button:focus, .accordion-button:active {
+.accordion-button:focus,
+.accordion-button:active {
   box-shadow: none;
   outline: none;
 }
