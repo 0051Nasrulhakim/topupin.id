@@ -21,7 +21,7 @@ export default function Menu() {
 
         <div className="menu">
           <div className="list-menu active">
-            <Link href="/" className="no-decoration">
+            <Link href="/" className="no-decoration" style={{ color: "white" }}>
               Dashboard
             </Link>
           </div>
@@ -33,7 +33,7 @@ export default function Menu() {
     return (
       <div className="menu">
         <div className="list-menu active">
-          <Link href="/" className="no-decoration">
+          <Link href="/" className="no-decoration" style={{ color: "white" }}>
             Dashboard
           </Link>
         </div>

@@ -1,5 +1,13 @@
+// @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 // variable untuk menampung warna
 $success: #032782;
+$bg-dasarSection: #292929;
+$border-section: #424242;
+
+body {
+    background-color: #1a1a1d !important;
+}
 
 .no-decoration {
     color: black;
@@ -26,25 +34,34 @@ $success: #032782;
 .container-custom {
     padding-right: 5%;
     padding-left: 5%;
+    background-color: #1a1a1d;
 
     .navbar-custom {
-        border: 1px solid;
+        background-color: #FFD700;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
 
         .logo {
             padding: 1%;
             font-weight: 700;
             text-decoration: none;
             color: black;
+            font-family: "Caveat", cursive;
+            font-weight: 600;
+            font-size: 15pt;
         }
+
     }
 
     .menu {
         display: flex;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid #5a5a5a;
         margin-top: 1%;
         margin-bottom: 1.2%;
+        // color: white;
 
         .list-menu {
+            color: white;
             text-align: center;
             padding-top: 5px;
             padding-bottom: 5px;
@@ -67,7 +84,7 @@ $success: #032782;
         margin-bottom: 1%;
         justify-content: center;
         gap: 10.5px 10.5px;
-        border: 1px solid;
+        // border: 1px solid;
 
         .list-item-produk {
             border-radius: 7px;
@@ -76,6 +93,7 @@ $success: #032782;
             margin-bottom: 1%;
             // margin-left: 1%;
             border: 1px solid;
+            background-color: #e7e7e7;
 
             .pict-item-produk {
                 width: 100%;
@@ -101,9 +119,9 @@ $success: #032782;
         flex-wrap: wrap;
         margin-top: 1%;
         margin-bottom: 1%;
-        justify-content: center;
+        justify-content: left;
         gap: 10.5px 10.5px;
-        border: 1px solid;
+        // border: 1px solid;
 
         .list-item-kategori {
             border-radius: 7px;
@@ -112,6 +130,7 @@ $success: #032782;
             margin-bottom: 1%;
             // margin-left: 1%;
             border: 1px solid;
+            background-color: #e7e7e7;
 
             .pict-item-kategori {
                 width: 100%;
@@ -193,14 +212,17 @@ $success: #032782;
         display: flex;
 
         .section-left {
-            // border: 1px solid;
+            // border: 1px solid ;
             width: 25%;
             margin-right: 2%;
+            color: white;
 
             .contain {
+                background-color: $bg-dasarSection;
                 padding: 1%;
-                border: 1px solid;
+                border: 1px solid $border-section;
                 height: 300px;
+                font-family: "Roboto", sans-serif;
             }
 
             @media screen and (max-width: 980px) {
@@ -211,7 +233,7 @@ $success: #032782;
                     border-radius: 5px;
                     height: 320px;
                     padding: 1%;
-                    border: 1px solid;
+                    border: 1px solid $border-section;
                 }
             }
 
@@ -223,7 +245,7 @@ $success: #032782;
                     border-radius: 5px;
                     height: 120px;
                     padding: 1%;
-                    border: 1px solid;
+                    border: 1px solid $border-section;
                 }
             }
 
@@ -235,7 +257,7 @@ $success: #032782;
                     border-radius: 5px;
                     height: 220px;
                     padding: 1%;
-                    border: 1px solid;
+                    border: 1px solid $border-section;
                 }
             }
 
@@ -247,7 +269,7 @@ $success: #032782;
                     border-radius: 5px;
                     height: 120px;
                     padding: 1%;
-                    border: 1px solid;
+                    border: 1px solid $border-section;
                 }
 
             }
@@ -257,15 +279,17 @@ $success: #032782;
             width: 73%;
 
             .step-1 {
-                border: 1px solid;
+                border: 1px solid $border-section;
                 padding-left: 2%;
                 padding-right: 2%;
                 padding-bottom: 3%;
                 padding-top: 3%;
                 border-radius: 5px;
                 margin-bottom: 2%;
+                background-color: $bg-dasarSection;
 
                 .title {
+                    color: white;
                     font-size: large;
                     font-weight: 800;
                     border-bottom: 2px solid;
@@ -291,19 +315,21 @@ $success: #032782;
             }
 
             .step-2 {
-                border: 1px solid;
+                border: 1px solid $border-section;
                 padding-left: 2%;
                 padding-right: 2%;
                 padding-bottom: 3%;
                 padding-top: 3%;
                 border-radius: 5px;
                 margin-bottom: 2%;
+                background-color: $bg-dasarSection;
 
                 .title {
                     font-size: large;
                     font-weight: 800;
                     border-bottom: 2px solid;
                     margin-bottom: 2%;
+                    color: white;
                 }
 
                 .section-step-2 {
@@ -312,12 +338,13 @@ $success: #032782;
                     gap: 15px 15px;
 
                     .item {
-                        border: 1px solid;
+                        border: 1px solid #a0a0a0;
                         border-radius: 5px;
                         // width: 31.8%;
                         width: 12rem;
                         display: flex;
                         height: 60px;
+                        background-color: white;
 
                         &.active {
                             background-color: $success;
@@ -325,6 +352,14 @@ $success: #032782;
                             border: none;
                             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2),
                                 0 4px 6px rgba(0, 139, 74, 0.993);
+                            .left{
+                                .price-item {
+                                    color: white;
+                                }
+                                .title-item {
+                                    color: white;
+                                }
+                            }
                         }
 
                         @media screen and (max-width: 980px) {
@@ -349,11 +384,17 @@ $success: #032782;
                                 font-weight: 700;
                                 text-align: center;
                                 margin-top: 7%;
+                                color: black;
+                            }
+
+                            .title-item {
+                                color: black;
                             }
 
                             @media screen and (max-width: 750px) {
                                 text-align: center;
                                 width: 100%;
+
                             }
 
                         }
@@ -389,19 +430,21 @@ $success: #032782;
             }
 
             .step-3 {
-                border: 1px solid;
+                border: 1px solid $border-section;
                 padding-left: 2%;
                 padding-right: 2%;
                 padding-bottom: 3%;
                 padding-top: 3%;
                 border-radius: 5px;
                 margin-bottom: 2%;
+                background-color: $bg-dasarSection;
 
                 .title {
                     font-size: large;
                     font-weight: 800;
                     border-bottom: 2px solid;
                     margin-bottom: 2%;
+                    color: white;
                 }
 
                 .form-voucher {
@@ -442,6 +485,7 @@ $success: #032782;
 
     .accordion-item {
         margin-bottom: 1px;
+        background-color: $bg-dasarSection;
     }
 
     .btn-atas {
@@ -459,11 +503,12 @@ $success: #032782;
         border-left: 2px solid;
         border-right: 2px solid;
         margin-bottom: 1%;
+        background-color: white;
     }
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #007bff; // Ganti dengan warna yang diinginkan
+    background-color: #007bff !important; // Ganti dengan warna yang diinginkan
     color: #fff; // Ganti dengan warna teks yang sesuai
 
     border-bottom-left-radius: 0px !important;
@@ -471,7 +516,11 @@ $success: #032782;
 
 }
 
-.accordion-button:focus,
+// .accordion-button:focus,
+button:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
 .accordion-button:active {
     box-shadow: none; // Menghilangkan bayangan
     outline: none; // Menghilangkan outline
@@ -486,9 +535,17 @@ $success: #032782;
     border: 1px solid;
     margin-top: 3%;
     height: 120px;
+    background-color: $bg-dasarSection;
 
     .content {
         padding-left: 1%;
         padding-right: 1%;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        // buat hover
+        &:hover {
+            color: #FFD700;
+        }   
+        
     }
 }
